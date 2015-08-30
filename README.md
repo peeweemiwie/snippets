@@ -1,8 +1,8 @@
 # snippets
 
-var count = 10;
-var counterIncrement=-1;
-var counter = setInterval(timer, 500); 
+        var count = 10;
+        var counterIncrement=-1;
+        var counter = setInterval(timer, 500); 
 
     function timer() {
       count = count+counterIncrement;
