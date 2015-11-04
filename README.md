@@ -11,3 +11,12 @@
         }
       console.log(count);
     }
+
+
+
+        var circles = d.querySelectorAll('.circle');
+        [].forEach.call(circles, function(el){
+                el.addEventListener('click', function(e){      
+                        // DO SOMETHING I SAID!!!! 
+                });
+        });
