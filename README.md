@@ -25,7 +25,7 @@
         
 ## remove placeholder on focus
         var tableInput = d.querySelectorAll('.margin-calc-table input');  
-                [].forEach.call(tableInput, function(el){
+        [].forEach.call(tableInput, function(el){
                 var placeholderVal = el.placeholder;
                 el.addEventListener('focus', function(e){
                         el.placeholder = '';
