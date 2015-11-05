@@ -13,10 +13,24 @@
     }
 
 
-
+## forEach addEventListener
         var circles = d.querySelectorAll('.circle');
         [].forEach.call(circles, function(el){
                 el.addEventListener('click', function(e){      
                         // DO SOMETHING I SAID!!!! 
+                });
+        });
+        
+        
+        
+## remove placeholder on focus
+        var tableInput = d.querySelectorAll('.margin-calc-table input');  
+                [].forEach.call(tableInput, function(el){
+                var placeholderVal = el.placeholder;
+                el.addEventListener('focus', function(e){
+                        el.placeholder = '';
+                });
+                el.addEventListener('blur', function(e){
+                        el.placeholder = placeholderVal;
                 });
         });
