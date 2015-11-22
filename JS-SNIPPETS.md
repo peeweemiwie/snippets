@@ -1,5 +1,7 @@
 # javascript snippets
 
+## for loop to increment variable to build a timer
+
         var count = 10;
         var counterIncrement=-1;
         var counter = setInterval(timer, 500); 
@@ -14,6 +16,7 @@
 
 
 ## forEach addEventListener
+
         var circles = d.querySelectorAll('.circle');
         [].forEach.call(circles, function(el){
                 el.addEventListener('click', function(e){      
@@ -24,6 +27,8 @@
         
         
 ## remove placeholder on focus
+
+        var d = document;
         var tableInput = d.querySelectorAll('.margin-calc-table input');  
         [].forEach.call(tableInput, function(el){
                 var placeholderVal = el.placeholder;
