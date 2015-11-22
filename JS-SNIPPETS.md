@@ -83,3 +83,15 @@ https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore
         this.classList.toggle('first');
         this.classList.toggle('sec');
     }
+
+
+## get css value
+
+http://stackoverflow.com/questions/14275304/how-to-get-margin-value-of-a-div-in-original-javascript
+https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle
+https://msdn.microsoft.com/library/ms535231(v=vs.85).aspx
+
+    var p = document.getElementById("target");
+    var style = p.currentStyle || window.getComputedStyle(p);
+    display("Current marginTop: " + style.marginTop);
+    
