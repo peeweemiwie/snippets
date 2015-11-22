@@ -1,36 +1,7 @@
-# snippets
+# Snippets for CSS and Javascript
 
-        var count = 10;
-        var counterIncrement=-1;
-        var counter = setInterval(timer, 500); 
+css : https://github.com/peeweemiwie/snippets/blob/master/CSS-SNIPPETS.md
 
-    function timer() {
-      count = count+counterIncrement;
-          if (count == 0 || count == 10 ) {
-            counterIncrement = -counterIncrement;
-        }
-      console.log(count);
-    }
+javascript : https://github.com/peeweemiwie/snippets/blob/master/JS-SNIPPETS.md
 
-
-## forEach addEventListener
-        var circles = d.querySelectorAll('.circle');
-        [].forEach.call(circles, function(el){
-                el.addEventListener('click', function(e){      
-                        // DO SOMETHING I SAID!!!! 
-                });
-        });
-        
-        
-        
-## remove placeholder on focus
-        var tableInput = d.querySelectorAll('.margin-calc-table input');  
-        [].forEach.call(tableInput, function(el){
-                var placeholderVal = el.placeholder;
-                el.addEventListener('focus', function(e){
-                        el.placeholder = '';
-                });
-                el.addEventListener('blur', function(e){
-                        el.placeholder = placeholderVal;
-                });
-        });
+jQuery to javascript : https://github.com/peeweemiwie/snippets/blob/master/JQUERY-JS.md
