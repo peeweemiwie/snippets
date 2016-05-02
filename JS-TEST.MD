@@ -89,7 +89,26 @@
     }
 
 
+### Convertion from celsius to fahrenheit;
+
+    function convertToF(celsius) {
+      fahrenheit = celsius * (9/5) + 32;
+      return fahrenheit;
+    }
+
+    convertToF(30);
 
 
+### escape characters
+
+    Code  Output
+    \'  single quote
+    \"  double quote
+    \\  backslash
+    \n  new line
+    \r  carriage return
+    \t  tab
+    \b  backspace
+    \f  form feed
 
 
