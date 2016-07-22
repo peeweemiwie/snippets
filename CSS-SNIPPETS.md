@@ -12,6 +12,14 @@
       font-size:62.5%; 
     }
 
+## creating square for responsive web design
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+   }
+
 ## SCSS compass
 
     @include font-face("Blooming Grove", font-files("examples/bgrove.ttf", "examples/bgrove.otf"));
