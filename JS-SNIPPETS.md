@@ -95,3 +95,19 @@ https://msdn.microsoft.com/library/ms535231(v=vs.85).aspx
     var style = p.currentStyle || window.getComputedStyle(p);
     display("Current marginTop: " + style.marginTop);
     
+
+## smooth transition to anchor point
+    $(function() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html, body').animate({
+                  scrollTop: target.offset().top - 70
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
